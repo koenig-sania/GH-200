@@ -1,0 +1,22 @@
+name : First Workflow
+
+# Trigger
+
+on : push
+
+
+jobs :
+     Hello-Job:
+          runs-on : ubuntu-latest
+          steps:
+             - name : Hello World
+               run : echo "Hello World" 
+
+              # Step 2
+             - name : Second Step
+               run : echo "Executing second step
+
+    
+
+
+    
