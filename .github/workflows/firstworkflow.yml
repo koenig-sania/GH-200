@@ -31,6 +31,14 @@ jobs :
             - name : Event Name 
               run : |
                echo "Event name: ${{github.event_name}}" # Context Variable
+
+     windows-echo:
+      if: github.event_name == 'push'
+      runs-on : windows-latest
+      steps:
+        - name : Show OS
+          shell : bash
+          run :  echo " the job is running o a Windows runner"
              
               
              
