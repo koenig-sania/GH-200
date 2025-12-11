@@ -39,6 +39,9 @@ jobs :
         - name : Show OS
           shell : bash
           run :  echo " the job is running o a Windows runner"
+
+        - name : Install Node JS Dependencies 
+        - uses : actions/setup-node@v6
              
               
              
